@@ -243,3 +243,96 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+
+.phone_form {
+  width: 300px;
+  margin: 50px auto;
+  position: relative;
+}
+#user_name {
+  width: 300px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 8px;
+  height: 40px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #363636;
+}
+#user_phone {
+  width: 300px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 8px 8px 8px 50px;
+  height: 40px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #363636;
+}
+
+#user_message {
+  width: 300px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 8px 8px 8px 50px;
+  height: 300px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #363636;
+  resize: none;
+}
+#user_name:focus,
+#user_phone:focus,
+#user_message:focus{
+  outline: none;
+  border-color: #363636;
+}
+input#user_name::-moz-input-placeholder,
+input#user_phone::-moz-input-placeholder,
+input#user_message::-moz-input-placeholder {
+  color: #363636;
+}
+input#user_name::-webkit-input-placeholder,
+input#user_phone::-webkit-input-placeholder,
+input#user_message::-webkit-input-placeholder
+ {
+  color: #363636;
+}
+.user_name {
+ position: relative;  
+}
+.user_phone {
+  position: relative;
+}
+.user_phone:before {
+  content: "+380";
+  display: block;
+  height: 40px;
+  color: #363636;
+  position: absolute;
+  top: 34px;
+  left: 7px;
+  font-size: 16px;
+}
+.btn_submit {
+  height: 30px;
+  position: absolute;
+  top: 485px;
+  right: 60px;
+  background: #363636;
+  color: #fff;
+  border: none;
+  width: 180px;
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+.btn_submit.disabled {
+  color: #363636;
+  background: #ccc;
+}
