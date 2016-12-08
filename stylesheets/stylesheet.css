@@ -278,7 +278,7 @@ a {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  padding: 8px 8px 8px 50px;
+  padding: 8px;
   height: 300px;
   border: 1px solid #ccc;
   font-size: 16px;
