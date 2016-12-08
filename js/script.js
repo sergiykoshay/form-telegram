@@ -19,7 +19,7 @@ $(function() {
   if($('.phone_form').exists()){
     
     var form = $('.phone_form'),
-     	btn = $('.btn_submit');
+     	btn = form.find('.btn_submit');
     
     $('.rfield').addClass('empty_field');
   
