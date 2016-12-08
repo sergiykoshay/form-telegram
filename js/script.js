@@ -19,9 +19,9 @@ $(function() {
   if($('.phone_form').exists()){
     
     var form = $('.phone_form'),
-      btn = form.find('.btn_submit');
+     	btn = $('.btn_submit');
     
-    form.find('.rfield').addClass('empty_field');
+    $('.rfield').addClass('empty_field');
   
     setInterval(function(){
     
