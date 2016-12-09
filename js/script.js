@@ -64,7 +64,7 @@ $(document).ready(function(){
           if($(this).hasClass('disabled')){
             return false
           } else {
-            form.submit().attr({onclick="sender()"});
+            form.submit();
 		
           }
         });
