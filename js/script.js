@@ -26,8 +26,8 @@ $(function() {
   
     setInterval(function(){
     
-      if($('#user_phone').exists()){
-        var pmc = $('#user_phone');
+      if($('.rfield').exists()){
+        var pmc = $('.rfield');
         if ( (pmc.val().indexOf("_") != -1) || pmc.val() == '' ) {
           pmc.addClass('empty_field');
         } else {
