@@ -12,7 +12,7 @@ $(function() {
   if($('#user_phone').exists()){
     
     $('#user_phone').each(function(){
-      $(this).mask("(999)999-99-99");
+      $(this).mask("(99)999-99-99");
     });
     
   }
