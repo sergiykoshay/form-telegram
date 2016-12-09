@@ -12,7 +12,7 @@ $(function() {
   if($('#user_phone').exists()){
     
     $('#user_phone').each(function(){
-      $(this).mask("(99) 999-99-99");
+      $(this).mask("(99)999-99-99");
     });
     
   }
@@ -68,7 +68,7 @@ tel = $("#user_phone").val();
   	user_message = "_Коментар:_ " + $("#user_message").val();
   	message = user_name + next_st + tel +  user_message;
    $.get("https://api.telegram.org/bot291742143:AAHSB2FvlPMwcTatGxhRB51RpKfyZzY5w84/sendMessage?parse_mode=markdown&text="+message+"&chat_id=-141035595");
-
+	$("#user_name").val();
 });
 
 
