@@ -9,12 +9,12 @@ jQuery.fn.exists = function() {
 //	Phone Mask
 $(function() {
   
-  if($('#user_phone').exists()){
+  
     
     $('#user_phone').mask("(99)999-99-99");
-    );
+   
     
-  }
+  
   
   if($('.phone_form').exists()){
     
