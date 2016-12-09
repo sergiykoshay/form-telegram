@@ -19,7 +19,7 @@ $(function() {
   if($('.phone_form').exists()){
     
     var form = $('.phone_form'),
-      btn = form.find('.btn_submit');
+    var btn = form.find('.btn_submit');
     
     form.find('.rfield').addClass('empty_field');
   
@@ -28,7 +28,7 @@ $(function() {
       if($('.rfield').exists()){
         var pmc = $('.rfield');
 	var tel = $('#user_phone');
-        if ( (tel.val().indexOf("_") != -1) || pmc.val() == '' ) {
+        if ( (tel.val().indexOf("_") > 0) || pmc.val() == '' ) {
           pmc.addClass('empty_field');
         } else {
             pmc.removeClass('empty_field');
