@@ -11,9 +11,8 @@ $(function() {
   
   if($('#user_phone').exists()){
     
-    $('#user_phone').each(function(){
-      $(this).mask("(99)999-99-99");
-    });
+    $('#user_phone').mask("(99)999-99-99");
+    );
     
   }
   
@@ -28,7 +27,8 @@ $(function() {
     
       if($('.rfield').exists()){
         var pmc = $('.rfield');
-        if ( (pmc.val().indexOf("_") != -1) || pmc.val() == '' ) {
+	var tel = $('#user_phone');
+        if ( (tel.val().indexOf("_") != -1) || pmc.val() == '' ) {
           pmc.addClass('empty_field');
         } else {
             pmc.removeClass('empty_field');
