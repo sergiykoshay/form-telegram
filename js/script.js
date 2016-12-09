@@ -25,7 +25,7 @@ $(document).ready(function(){
           .removeAttr('required')
           .removeAttr('pattern')
           .removeAttr('title')
-          .attr({'placeholder':'(___) ___ __ __'});
+          .attr({'placeholder':'(__) ___ __ __'});
       }
       
       if($('.phone_form').exists()){
@@ -64,7 +64,7 @@ $(document).ready(function(){
           if($(this).hasClass('disabled')){
             return false
           } else {
-            form.submit(sender());
+            form.submit();
           }
         });
         
