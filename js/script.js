@@ -63,7 +63,7 @@ $(document).ready(function(){
           if($(this).hasClass('disabled')){
             return false
           } else {
-            form.sender();
+            form.submit();
 		
           }
         });
