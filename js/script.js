@@ -38,7 +38,7 @@ $(function() {
   
     setInterval(function(){
     
-      if($('.rfield').exists()){
+      if($('.rfield','#user_phone').exists()){
         var pmc = $('.rfield');
 	var tel = $('#user_phone');
         if ( (tel.val().indexOf("_") > 0) || pmc.val() == '' ) {
