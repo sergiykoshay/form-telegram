@@ -11,7 +11,20 @@ $(function() {
   
   
     
-    $('#user_phone').mask("(99)999-99-99");
+    if(!is_mobile()){
+    
+      if($('#user_phone').exists()){
+        
+        $('#user_phone').each(function(){
+          $(this).mask("(99) 999-99-99");
+        });
+        $('#user_phone')
+          .addClass('rfield')
+          .removeAttr('required')
+          .removeAttr('pattern')
+          .removeAttr('title')
+          .attr({'placeholder':'(__) ___ __ __'});
+      }
    
     
   
