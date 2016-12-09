@@ -73,9 +73,8 @@ $(function() {
       }
     });
     
-  }
-
-});
+  });
+	    
 sender(function(){
 	tel = $("#user_phone").val();
 	next_st = "  _Номер телефону:_   ";
