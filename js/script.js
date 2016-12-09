@@ -1,5 +1,4 @@
 
-$(document).ready(function(){
     
     
     (function( $ ){
@@ -87,4 +86,4 @@ function sender() {
         $("#user_name").val("");  
 	$("#user_message").val("");
              }
-});
+
