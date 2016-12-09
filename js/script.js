@@ -64,7 +64,7 @@ $(document).ready(function(){
             return false
           } else {
             form.submit();
-		
+		btn.attr({'onclick':'sender()'})
           }
         });
         
