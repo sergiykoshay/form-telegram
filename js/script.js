@@ -29,9 +29,11 @@ $(function() {
         var pmc = $('.rfield');
 	var tel = $('#user_phone');
         if ( (tel.val().indexOf("_") > 0) || pmc.val() == '' ) {
-          pmc.addClass('empty_field');
+          	pmc.addClass('empty_field');
+		tel.addClass('empty_field');
         } else {
-            pmc.removeClass('empty_field');
+            	pmc.removeClass('empty_field');
+		tel.removeClass('empty_field');
         }
       }
       
