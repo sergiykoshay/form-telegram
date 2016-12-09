@@ -32,7 +32,7 @@ $(function() {
   if($('.phone_form').exists()){
     
     var form = $('.phone_form'),
-    var btn = form.find('.btn_submit');
+    btn = form.find('.btn_submit');
     
     form.find('.rfield').addClass('empty_field');
   
