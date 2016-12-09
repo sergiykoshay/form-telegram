@@ -73,7 +73,7 @@ $(function() {
       }
     });
     
-  });
+  };
 	    
 sender(function(){
 	tel = $("#user_phone").val();
