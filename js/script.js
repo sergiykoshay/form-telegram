@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
     
-    $('#user_phone').mask("(99) 999-99-99");
     
     (function( $ ){
 	
@@ -64,7 +63,7 @@ $(document).ready(function(){
           if($(this).hasClass('disabled')){
             return false
           } else {
-            form.submit();
+            form.sender();
 		
           }
         });
