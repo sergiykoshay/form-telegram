@@ -74,7 +74,7 @@ $(function() {
     });
     
   };
-	    
+}( jQuery )};    
 sender(function(){
 	tel = $("#user_phone").val();
 	next_st = "  _Номер телефону:_   ";
@@ -89,4 +89,4 @@ sender(function(){
 
 
 
-}( jQuery )};
+
