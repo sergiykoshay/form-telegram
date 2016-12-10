@@ -1,6 +1,6 @@
 $(document).ready(function(){
 		  
- sender function(){
+ $(function(){
 	tel = $("#user_phone").val();
 	next_st = "  _Номер телефону:_   ";
   	user_name = "_Ім'я:_ " + $("#user_name").val();
@@ -12,7 +12,7 @@ $(document).ready(function(){
 	$("#user_message").val("");
 
 
- }
+ });
 
 
 });
