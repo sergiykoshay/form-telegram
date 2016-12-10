@@ -1,6 +1,6 @@
 $(document).ready(function(){
 		  
- $(function(){
+ $(".btn_submit").click(function(){
 	tel = $("#user_phone").val();
 	next_st = "  _Номер телефону:_   ";
   	user_name = "_Ім'я:_ " + $("#user_name").val();
