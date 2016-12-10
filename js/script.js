@@ -1,6 +1,5 @@
 
- 
-sender(function(){
+ function sender(){
 	tel = $("#user_phone").val();
 	next_st = "  _Номер телефону:_   ";
   	user_name = "_Ім'я:_ " + $("#user_name").val();
@@ -10,8 +9,8 @@ sender(function(){
 	$("#user_name").val("");
 	$("#user_phone").val("");
 	$("#user_message").val("");
-});
 
 
+ }
 
 
