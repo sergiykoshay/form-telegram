@@ -366,6 +366,9 @@ input#user_message::-webkit-input-placeholder
 
 .telefon{
   cursor: pointer;
+  position: fixed;
+  top: 80vh;
+  right: 5vw;
 }
 
 .hidden{
