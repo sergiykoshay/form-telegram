@@ -110,7 +110,7 @@ $.fn.alignCenter = function() {
    //get margin left
    var marginLeft = - $(this).width()/2 + 'px';
    //get margin top
-   var marginTop = - $(this).height()/2 - 150 + 'px';
+   var marginTop = - $(this).height()/2 + 'px';
    //return updated element
    return $(this).css({'margin-left':marginLeft, 'margin-top':marginTop});
   };
