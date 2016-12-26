@@ -22,13 +22,23 @@
     <section class="main-content">
       
       
+    <div class="container">
+      <h2 class="header">Random gallery</h2>
+      <div class="flex-box">
+        <div class="img-box"><img class="img" src="http://lorempixel.com/300/200"/></div>
+        <div class="img-box"><img class="img" src="http://lorempixel.com/300/200/cats"/></div>
+        <div class="img-box"><img class="img" src="http://lorempixel.com/300/200/cats/1"/></div>
+        <div class="img-box"><img class="img" src="http://lorempixel.com/300/200/cats/2"/></div>
+        <div class="img-box"><img class="img" src="http://lorempixel.com/300/200/cats/3"/></div>
+        <div class="img-box"><img class="img" src="http://lorempixel.com/300/200/cats/4"/></div>
+      </div>
+    </div>
       
-     <!--  <input type="text" id="message" value="Message"></br>
-      <input type="submit" name="Send Message" onclick="sendmessage()"> -->
+ 
 
 <form action="#" method="get" onSubmit="sender()" class="phone_form hidden">
    <h2 class="header__form">Форма</h2>
-    <span class="cancel"onclick="closePopup(); return false;" >х</span>
+    <div class="cancel"onclick="closePopup(); return false;" >х</div>
    <div class="user_name">
    Введіть ім'я*
     <input type="text" id="user_name" class="rfield" required /> 
@@ -42,11 +52,12 @@
     <textarea type="text" id="user_message"></textarea>
   </div>
   * - поля обовязкові до заповнення
-  <input type="submit"  class="btn btn_submit disabled" value="Send" />
-  <input type="button" value="ESC" onclick="closePopup(); return false;" class="btn" />
+  <div class="button-box">
+         <input type="submit"  class="btn btn_submit disabled" value="Send" />
+         <input type="button" value="ESC" onclick="closePopup(); return false;" class="btn esc" /></div> 
 </form>
 <div id="opaco" onclick="closePopup();"></div>
-<span class="telefon" onClick="showPopup()"><i class="fa fa-phone fa-4x"></i></span>
+<span class="telephone" onClick="showPopup()"><i class="fa fa-phone fa-4x"></i></span>
 
 
         <footer class="site-footer">

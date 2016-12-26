@@ -15,11 +15,15 @@ a {
   a:hover {
     text-decoration: underline; }
 
+
+
+
+
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
   color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
+  
   border-color: rgba(255, 255, 255, 0.2);
   border-style: solid;
   border-width: 1px;
@@ -29,9 +33,9 @@ a {
     margin-left: 1rem; }
 
 .btn:hover {
-  color: rgba(255, 255, 255, 0.8);
+  
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.2);
+  
   border-color: rgba(255, 255, 255, 0.3); }
 
 @media screen and (min-width: 64em) {
@@ -52,6 +56,52 @@ a {
     .btn + .btn {
       margin-top: 1rem;
       margin-left: 0; } }
+
+
+.btn_submit {
+  width: 46%;
+  background-color: rgb(90, 165, 228);
+  
+
+}
+.btn.disabled {
+  
+  background-color: #323;
+
+}
+
+.btn.esc{
+  color: #red;
+  background-color: rgb(233, 165, 33);
+  width: 46%;
+}
+.cancel{
+  background: #a90329;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 );
+  position: relative;
+  top: -80px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px #111; 
+  padding:  0;
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  cursor: pointer;  
+
+
+
+
+  
+    
+}
+.cancel:hover{
+  box-shadow: 0 0 2px #000;
+  color:  #d0d0d0;
+}
+
 
 .page-header {
   color: #fff;
@@ -251,15 +301,15 @@ a {
   
 
 .phone_form {
-  width: 340px;
-  margin: 50px auto;
-  padding: 20px;
-  position: absolute;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 15px;
+  position: fixed;
   z-index: 12;
   background: #e4eaec;
   border-radius: 8px;
   left: 50%;
-  
+  top: 50%;
 }
 
 .header__form{
@@ -269,7 +319,7 @@ a {
   margin-bottom: -20px;
 }
 #user_name {
-  width: 300px;
+  width: 280px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -280,11 +330,11 @@ a {
   color: #363636;
 }
 #user_phone {
-  width: 300px;
+  width: 280px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  padding: 8px 8px 8px 50px;
+  padding: 8px 8px 8px 39px;
   height: 40px;
   border: 1px solid #ccc;
   font-size: 16px;
@@ -292,7 +342,7 @@ a {
 }
 
 #user_message {
-  width: 300px;
+  width: 280px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -337,34 +387,9 @@ input#user_message::-webkit-input-placeholder
   left: 7px;
   font-size: 18px;
 }
-.btn_submit {
- 
-  background-color: rgb(90, 165, 228);
-  color:  white;
 
-}
-.btn_submit.disabled {
-  color: #fff;
-  background: #ccc;
-}
-.cancel{
-  background-color: red;
-  border-radius: 10px;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  height: 20px;
-  position: relative;
-  right: 5px;
-  text-align: center;
-  top: -79px;
-  width: 20px;
-  display: block;
-  line-height: 20px;
-    
-}
 
-.telefon{
+.telephone{
   cursor: pointer;
   position: fixed;
   top: 80vh;
@@ -379,14 +404,77 @@ input#user_message::-webkit-input-placeholder
 #opaco {
     background-color: #000000;
     left: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity = 70);
-    filter: alpha(opacity=70);
-    moz-opacity: 0;
-    -khtml-opacity: 0;
-    opacity: 0;
-    position: fixed;
+
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 10;
+}
+
+
+@media screen and (min-width: 64em) {
+  .phone_form {
+    } }
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .phone_form {
+     } }
+
+@media screen and (max-width: 42em) {
+  .phone_form {
+    width: 100%;
+
+    } 
+  #user_name,
+  #user_phone,
+  #user_message{
+    width: 96%;
+  }
+
+}
+
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #bbb;
+}
+
+h2.header {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 25px;
+  padding: 25px;
+  color: #fff;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.img-box {
+  width: 300px;
+  height: 200px;
+  margin: 40px;
+  padding: 5px;
+  border: 1px solid #222;
+  box-shadow: 1px 1px 4px #444, -1px -1px 4px #444;
+  overflow: hidden;
+}
+
+.img-box:before {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 5px solid #fff;
 }

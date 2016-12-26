@@ -96,7 +96,7 @@ function showPopup()
   else
   //in all the rest browsers - fade slowly
   {
-   $('#opaco').height($(document).height()).toggleClass('hidden').fadeTo('slow', 0.7);
+   $('#opaco').height($(document).height()).toggleClass('hidden').fadeTo('fast', 0.5);
   }
 
   $('.phone_form')
@@ -123,3 +123,11 @@ $.fn.alignCenter = function() {
   return false;
 }
 
+$(document).ready(function(){
+  $('.img-box').each(function(index){
+    var angle = Math.floor( Math.random() * 60 - 30 );
+      $(this).css( 'transform', 'rotate(' + angle + 'deg)' );   
+  $(this).css( '-moz-transform', 'rotate(' + angle + 'deg)' );   
+  $(this).css( '-webkit-transform', 'rotate(' + angle + 'deg)' );
+  });
+});
