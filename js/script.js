@@ -131,3 +131,33 @@ $(document).ready(function(){
   $(this).css( '-webkit-transform', 'rotate(' + angle + 'deg)' );
   });
 });
+
+
+
+(function(){
+
+  var date = new Date();
+  var time = date.getHours();
+  var day = date.getDay();
+  var timeStart = 10;
+  var timeEnd = 18;
+  var lunchFlag = $("#lunch").is(':checked');
+         if (time>=timeStart&&time<timeEnd&&day>0&&day<6&&+!lunchFlag){
+           
+           $('.telephone').addClass('telephone--active');
+           //Менеджер зателефонує вам протягом 15 хвитилин
+         } else{
+           
+           $('.telephone').removeClass('telephone--active');
+           //Менеджер зателефонує вам в робочий час
+         }; 
+         
+          
+
+      })();
+
+
+
+
+
+
