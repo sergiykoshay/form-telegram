@@ -139,8 +139,8 @@ $(document).ready(function(){
   var date = new Date();
   var time = date.getHours();
   var day = date.getDay();
-  var timeStart = 10;
-  var timeEnd = 18;
+  var timeStart = 0;
+  var timeEnd = 24;
   var lunchFlag = $("#lunch").is(':checked');
          if (time>=timeStart&&time<timeEnd&&day>0&&day<6&&+!lunchFlag){
            
